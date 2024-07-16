@@ -33,7 +33,7 @@ class TestCalculatorAPI(unittest.TestCase):
         print("power ok")
 
     def test_square_root(self):
-        response = self.client.get("/square_root_num?a=9")
+        response = self.client.get("/square-root?a=9")
         self.assertEqual(response.json["result"], 3)
         print("square root ok")
 
